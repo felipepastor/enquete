@@ -24,8 +24,9 @@ class EnqueteController extends Controller
         $ativa = $request->input('ativa');
 
         /*
-         * Infelizmente o Lumen não possui a camada de Requests do Laravel AINDA
-         * toda validação deve ser feita ou na controladora ou nas rotas.
+         * O Lumen não vem com a camada de Request por padrão na sua configuração, onde seria a camada de negócio
+         * para tratar os dados. Para este exemplo não irei extender para utilizar esta camada.
+         *
          * */
         $validator = Validator::make(
             [
