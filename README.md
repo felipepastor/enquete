@@ -1,8 +1,6 @@
 # Sistema de Enquete
 
 ###Para utilizar esse sistema, siga os passos descritos abaixo:
-* Após clonar o repositório, atualize o composer com o comando na raiz do projeto: "composer update".
-* Vá a pasta public, e atualize as dependencias do bower com o comando: "bower install"
 * Execute a aplicação com o comando na raiz do projeto: "php artisan serve"
 * **Pronto!** Agora é só acessar: http://localhost:8000. Tudo rodando. :)
 
