@@ -1,5 +1,5 @@
 /lumen.log
-/vendor
+#/vendor
 public/app/vendor/
 composer.lock
 .idea
