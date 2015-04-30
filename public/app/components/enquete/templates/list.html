@@ -1,0 +1,43 @@
+<div class="alert-wrapper">
+    <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)">
+        <span ng-bind-html="alert.msg | parseHtml"></span>
+    </alert>
+</div>
+
+<h3 class="clearfix">
+    Últimas enquetes criadas
+    <div class="pull-right">
+        <button type="button" class="btn btn-sm btn-primary" ui-sref="enqueteAdicionar">
+            <i class="glyphicon glyphicon-plus"></i> Adicionar
+        </button>
+    </div>
+</h3>
+
+<hr/>
+<div class="table-container">
+    <div class="form-group input-group input-group-sm pull-right col-md-4 nopadding">
+        <input type="text" class="form-control" placeholder="Filtre as enquetes pelo o nome :)" ng-model="query.nome">
+        <span class="input-group-addon" id="basic-addon1">
+            <i class="glyphicon glyphicon-search"></i>
+        </span>
+    </div>
+    <table class="table table-bordered col-md-12 enquete-table">
+        <tr>
+            <th>Enquete</th>
+            <th>Criada em</th>
+            <th>Ativa?</th>
+            <th class="actions">Ações</th>
+        </tr>
+
+        <tr ng-repeat="enquete in enquetes | filter:query">
+            <td><% enquete.nome %></td>
+            <td><% enquete.created_at | asDate %></td>
+            <td><% enquete.ativa %></td>
+            <td class="center">
+                <button class="btn btn-sm btn-danger" ng-click="delete($index, $event)"><i class="glyphicon glyphicon-trash"></i> Excluir</button>
+                <button class="btn btn-sm btn-info" ui-sref="enqueteEdit({id:enquete.id, msg:0})"><i class="glyphicon glyphicon-pencil"></i> Editar</button>
+                <button class="btn btn-sm btn-default" ui-sref="enqueteView({id:enquete.id})"><i class="glyphicon glyphicon-check"></i> Responder</button>
+            </td>
+        </tr>
+    </table>
+</div>

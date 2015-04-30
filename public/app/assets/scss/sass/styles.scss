@@ -1,0 +1,126 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+  position: relative;
+}
+
+.loader {
+  background: rgba(255, 255, 255, 0.7) url('../img/loader.gif') no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar-brand {
+  padding: 15px 15px 15px 0;
+}
+
+/*
+  Classes referentes a enquente
+*/
+.enquete-table {
+  th {
+    &.actions {
+      width: 270px;
+    }
+  }
+  td {
+    vertical-align: middle !important;
+    &.center {
+      text-align: center;
+    }
+  }
+}
+
+.radio-resposta {
+  height: 18px;
+}
+
+.sem-item {
+  margin: 10px 0;
+}
+
+h3 {
+  &.title-enquete {
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 0 15px 0;
+    padding: 20px 0;
+  }
+}
+
+.form_enquete {
+  position: relative;
+  /*.cortina {
+    position: absolute;
+    min-height: 141px;
+    background-color: #333;
+    @include opacity(0.6);
+  }*/
+  .respostas {
+    margin: 10px 0;
+  }
+}
+
+#wrapper {
+  margin-top: 10px;
+  .repeat {
+
+    .repeat-son {
+      margin-left: 15px;
+      margin-top: 5px;
+      &.resposta {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.acoes {
+  margin-top: 20px;
+}
+
+.alert-wrapper {
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+.reposta-unica {
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+/*
+  Classes específicas para o bt3
+*/
+
+.nopadding {
+  padding: 0;
+}
+
+.nopadding-right {
+  padding-right: 0;
+}
+
+.nopadding-left {
+  padding-left: 0;
+}

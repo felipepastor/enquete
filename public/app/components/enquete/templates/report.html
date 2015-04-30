@@ -1,0 +1,23 @@
+<h3 class="clearfix title-enquete">
+    Relatório da Enquete - <%enquete.nome%>
+</h3>
+
+<div class="row" id="wrapper">
+    <div class="row-fluid">
+        <div class="repeat" ng-repeat="relatorio in relatorios">
+            <div class="col-md-6">
+                <div class="well">
+                    <h4><%relatorio.nome%></h4>
+                    <hr/>
+                    <canvas id="pie" class="chart chart-pie" data="relatorio.data" legend="true" labels="relatorio.label" ng-show="relatorio.data.length"></canvas>
+
+                    <div class="clearfix" ng-hide="relatorio.data.length">
+                        <div class="alert alert-warning sem-item" role="alert">
+                            <strong>Ops!</strong> Infelizmente, não temos dados suficientes para calcular essa enquete, por favor, colete mais dados.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

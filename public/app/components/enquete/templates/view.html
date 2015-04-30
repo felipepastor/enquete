@@ -1,0 +1,53 @@
+<h3 class="clearfix">
+    Enquete - <%enquete.nome%>
+    <div class="pull-right">
+        <button type="button" class="btn btn-sm btn-primary" ui-sref="enqueteRelatorio({id:enquete.id})">
+            <i class="glyphicon glyphicon-plus"></i> Visualizar relatório
+        </button>
+    </div>
+</h3>
+
+<alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)">
+    <span ng-bind-html="alert.msg | parseHtml"></span>
+</alert>
+
+<div class="row" id="wrapper">
+    <div class="col-md-12">
+        <div class="repeat" ng-repeat="pergunta in perguntas">
+            <div class="well clearfix">
+                <h4><%$index+1%> - <%pergunta.nome%></h4>
+                <hr/>
+                <div class="repeat-son resposta" ng-repeat="resposta in pergunta.respostas">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" class="radio-resposta" id="resposta<%resposta.id%>"
+                                   name="pergunta<%$parent.$index%>" ng-model="pergunta.selectedResposta"
+                                   ng-value="resposta.id" value="<%resposta.id%>">
+                        </span>
+                        <label class="form-control reposta-unica" for="resposta<%resposta.id%>">
+                            <%resposta.nome%>
+                        </label>
+                    </div>
+                </div>
+                <div class="pull-right acoes" ng-show="pergunta.respostas.length">
+                    <button class="btn btn-sm btn-success" ng-click="addAvaliacao($index, pergunta.selectedResposta)">
+                        Responder
+                    </button>
+                </div>
+                <div class="clearfix" ng-hide="pergunta.respostas.length">
+                    <div class="alert alert-warning sem-item" role="alert">
+                        Sem respostas adicionadas, por favor clique <a
+                            ui-sref="enqueteEdit({id:enquete.id, msg:0})">aqui</a> para adicionar.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="well clearfix" ng-hide="perguntas.length">
+            <div class="alert alert-warning sem-item" role="alert">
+                Sem perguntas adicionadas, por favor clique
+                <a ui-sref="enqueteEdit({id:enquete.id, msg:0})">aqui</a> para adicionar.
+            </div>
+        </div>
+    </div>
+</div>
