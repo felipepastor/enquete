@@ -8586,15 +8586,17 @@ body {
   height: 100%;
   z-index: 9999;
   display: none;
+  left: 0;
+  top: 0;
 }
 
-/* line 28, ../scss/sass/styles.scss */
+/* line 30, ../scss/sass/styles.scss */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* line 33, ../scss/sass/styles.scss */
+/* line 35, ../scss/sass/styles.scss */
 .navbar-brand {
   padding: 15px 15px 15px 0;
 }
@@ -8602,37 +8604,37 @@ body {
 /*
   Classes referentes a enquente
 */
-/* line 42, ../scss/sass/styles.scss */
+/* line 44, ../scss/sass/styles.scss */
 .enquete-table th.actions {
   width: 270px;
 }
-/* line 46, ../scss/sass/styles.scss */
+/* line 48, ../scss/sass/styles.scss */
 .enquete-table td {
   vertical-align: middle !important;
 }
-/* line 48, ../scss/sass/styles.scss */
+/* line 50, ../scss/sass/styles.scss */
 .enquete-table td.center {
   text-align: center;
 }
 
-/* line 54, ../scss/sass/styles.scss */
+/* line 56, ../scss/sass/styles.scss */
 .radio-resposta {
   height: 18px;
 }
 
-/* line 58, ../scss/sass/styles.scss */
+/* line 60, ../scss/sass/styles.scss */
 .sem-item {
   margin: 10px 0;
 }
 
-/* line 63, ../scss/sass/styles.scss */
+/* line 65, ../scss/sass/styles.scss */
 h3.title-enquete {
   border-bottom: 1px solid #eeeeee;
   margin: 0 0 15px 0;
   padding: 20px 0;
 }
 
-/* line 70, ../scss/sass/styles.scss */
+/* line 72, ../scss/sass/styles.scss */
 .form_enquete {
   position: relative;
   /*.cortina {
@@ -8642,36 +8644,36 @@ h3.title-enquete {
     @include opacity(0.6);
   }*/
 }
-/* line 78, ../scss/sass/styles.scss */
+/* line 80, ../scss/sass/styles.scss */
 .form_enquete .respostas {
   margin: 10px 0;
 }
 
-/* line 83, ../scss/sass/styles.scss */
+/* line 85, ../scss/sass/styles.scss */
 #wrapper {
   margin-top: 10px;
 }
-/* line 87, ../scss/sass/styles.scss */
+/* line 89, ../scss/sass/styles.scss */
 #wrapper .repeat .repeat-son {
   margin-left: 15px;
   margin-top: 5px;
 }
-/* line 90, ../scss/sass/styles.scss */
+/* line 92, ../scss/sass/styles.scss */
 #wrapper .repeat .repeat-son.resposta {
   margin-left: 0px;
 }
 
-/* line 97, ../scss/sass/styles.scss */
+/* line 99, ../scss/sass/styles.scss */
 .acoes {
   margin-top: 20px;
 }
 
-/* line 102, ../scss/sass/styles.scss */
+/* line 104, ../scss/sass/styles.scss */
 .alert-wrapper:first-child {
   margin-top: 20px;
 }
 
-/* line 107, ../scss/sass/styles.scss */
+/* line 109, ../scss/sass/styles.scss */
 .reposta-unica {
   font-weight: bold;
   cursor: pointer !important;
@@ -8680,17 +8682,17 @@ h3.title-enquete {
 /*
   Classes espec├¡ficas para o bt3
 */
-/* line 116, ../scss/sass/styles.scss */
+/* line 118, ../scss/sass/styles.scss */
 .nopadding {
   padding: 0;
 }
 
-/* line 120, ../scss/sass/styles.scss */
+/* line 122, ../scss/sass/styles.scss */
 .nopadding-right {
   padding-right: 0;
 }
 
-/* line 124, ../scss/sass/styles.scss */
+/* line 126, ../scss/sass/styles.scss */
 .nopadding-left {
   padding-left: 0;
 }
