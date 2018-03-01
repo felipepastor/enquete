@@ -1,11 +1,24 @@
-# Sistema de Enquete
+# Angular Survey
 
-###Para utilizar esse sistema, siga os passos descritos abaixo:
-* Execute a aplicação com o comando na raiz do projeto: "php artisan serve"
-* **Pronto!** Agora é só acessar: http://localhost:8000. Tudo rodando. :)
+###To make it running:
+* Run `php artisan serve`
+* **Ready to go!** Access: `http://localhost:8000`
 
-###Considerações importantes!
-* O sistema foi desenvolvido com angular e [Lumen](http://lumen.laravel.com/), este foi construido baseado no laravel 5
-* Por ser, um miniframework, algumas camadas foram retiradas, até para simplificar o desenvolvimento, como por exemplo, a camada de Requests (Tratamento de requisições), deixando assim este processo na própria controller.
-* O banco escolhido foi o sqlite, não vi necessidade de utilizar um MySql ou qualquer outro para este exemplo, porém caso aja necessidade as migrações estão registradas no Lumen e podem ser implementadas em outros SGBD's.
-* As dependências foram commitadas por inumeros motivos, alguns são: conflitos com atualizações via composer e bower e por comodidade para quem irá analisar o código. Posteriormente, irei deletar do repositório, visto que não é uma boa prática.
+###Important
+* The system was developed with [Angular](https://angularjs.org/) 1.x and [Lumen](http://lumen.laravel.com/).
+* It's a monolithic app with the backend and frontend in the same repo. 
+* Lumen does not have some layers as Laravel, it tries to make the things simple for API's
+* The database is sqlite, for this prototype, there's no need to use other like MySQL, if you need to, all the migrations are versioned.
+* The Dependencies were commited to facilited the running. (It should not) 
+
+###Project Structure
+* Backend folder `app/`
+* Frontend folder `public/`
+
+###TO DO
+* Improve unit tests
+* ES6 and ES7 improvements
+* Remove the front and backend dependencies
+
+###Notes
+* This project needs to be updated using new technologies
