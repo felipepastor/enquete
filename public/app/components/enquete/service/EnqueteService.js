@@ -9,8 +9,7 @@ enqueteService
     .service('EnqueteService', ['$modal', 'Enquete', function ($modal, Enquete) {
 
         this.deleteEnquete = function (id, $scope) {
-            console.log(id);
-            var modal = $modal.open({
+            const modal = $modal.open({
                 templateUrl: 'app/shared/modal/templates/index.html',
                 controller: 'ModalDeleteCtrl',
                 resolve: {
@@ -24,9 +23,10 @@ enqueteService
             });
 
             modal.result.then(function () {
-                var enquete_to_delete = $scope.enquetes[id];
+                const enquete_to_delete = $scope.enquetes[id];
+
                 Enquete.delete({id: enquete_to_delete.id}, function (response) {
-                    if (response.retorno == true) {
+                    if (response.retorno === true) {
                         $scope.enquetes.splice(id, 1);
 
                         $scope.alerts.push({

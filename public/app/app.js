@@ -1,4 +1,4 @@
-var enqueteApp = angular.module('enqueteApp',
+const enqueteApp = angular.module('enqueteApp',
     [
         'ui.router',
         'ui.bootstrap',
@@ -15,16 +15,16 @@ var enqueteApp = angular.module('enqueteApp',
         $interpolateProvider.endSymbol('%>');
     });
 
-var enqueteControllers = angular.module('enqueteControllers', ['chart.js']);
+const enqueteControllers = angular.module('enqueteControllers', ['chart.js']);
 
-var enqueteSharedControllers = angular.module('enqueteSharedControllers', []);
+const enqueteSharedControllers = angular.module('enqueteSharedControllers', []);
 
-var enqueteFactory = angular.module('enqueteFactory', []);
+const enqueteFactory = angular.module('enqueteFactory', []);
 
-var enqueteFilter = angular.module('enqueteFilter', []);
+const enqueteFilter = angular.module('enqueteFilter', []);
 
-var enqueteDirective = angular.module('enqueteDirective', []);
+const enqueteDirective = angular.module('enqueteDirective', []);
 
-var enqueteService = angular.module('enqueteService', []);
+const enqueteService = angular.module('enqueteService', []);
 
 

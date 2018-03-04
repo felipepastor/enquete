@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="app/vendor/angular-chart.js/dist/angular-chart.css">
     </head>
     <body ng-app="enqueteApp">
-        <div class="loader" loader></div>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -42,6 +41,7 @@
         </nav>
 
         <div class="container">
+            <div class="loader" loader></div>
             <div ui-view class="row"></div>
         </div><!-- /.container -->
 

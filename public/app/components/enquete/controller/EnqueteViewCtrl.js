@@ -21,14 +21,14 @@ enqueteControllers
         }, function (data, i) {
             $scope.perguntas = data.perguntas;
 
-            $scope.enquete.ativa == 1 ? $scope.enquete.ativa = true : $scope.enquete.ativa = false;
+            parseInt($scope.enquete.ativa) === 1 ? $scope.enquete.ativa = true : $scope.enquete.ativa = false;
         });
         $scope.alerts = [];
 
         $scope.addAvaliacao = function (index) {
             console.log($scope.perguntas[index].selectedResposta);
 
-            if ($scope.perguntas[index].selectedResposta == undefined) {
+            if ($scope.perguntas[index].selectedResposta === undefined) {
                 $scope.alerts = [
                     {
                         type: 'warning',

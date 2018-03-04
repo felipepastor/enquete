@@ -8,7 +8,7 @@ enqueteFactory
     }])
     .factory('httpInterceptor', function ($q, $rootScope, $log) {
 
-        var numLoadings = 0;
+        let numLoadings = 0;
 
         return {
             request: function (config) {
