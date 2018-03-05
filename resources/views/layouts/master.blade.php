@@ -3,6 +3,7 @@
 <html lang="pt-BR">
     <head>
         <title>Enquete XYS</title>
+        <link rel="stylesheet" href="app/vendor/bootstrap/dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="app/assets/css/styles.css"/>
         <link rel="stylesheet" href="app/vendor/angular-chart.js/dist/angular-chart.css">
     </head>

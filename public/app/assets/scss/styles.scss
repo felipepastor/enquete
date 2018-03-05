@@ -1,18 +1,13 @@
-// Import Bootstrap Compass integration
-@import "bootstrap-compass";
-// Import custom Bootstrap variables
-@import "bootstrap-variables";
-// Import Bootstrap for Sass
-@import "bootstrap";
-
-$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
-
 html, body {
   height: 100%;
 }
 
 body {
   padding-top: 50px;
+  position: relative;
+}
+
+.container {
   position: relative;
 }
 
@@ -71,12 +66,6 @@ h3 {
 
 .form_enquete {
   position: relative;
-  /*.cortina {
-    position: absolute;
-    min-height: 141px;
-    background-color: #333;
-    @include opacity(0.6);
-  }*/
   .respostas {
     margin: 10px 0;
   }
