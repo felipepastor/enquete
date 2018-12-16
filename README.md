@@ -4,7 +4,9 @@
 * Run `php artisan serve`
 * **Ready to go!** Access: `http://localhost:8000`
 
+
 ### Important
+* You should check your PHP configuration (MCrypt, mainly) if you have any issue
 * The system was developed with [Angular](https://angularjs.org/) 1.x and [Lumen](http://lumen.laravel.com/).
 * It's a monolithic app with the backend and frontend in the same repo. 
 * Lumen does not have some layers as Laravel, it tries to make the things simple for API's
